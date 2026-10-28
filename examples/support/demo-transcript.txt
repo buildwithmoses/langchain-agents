@@ -1,0 +1,58 @@
+warning: `VIRTUAL_ENV=<local path> does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+Model: openrouter:anthropic/claude-haiku-5.5
+
+=== Thread A (support-8c28daf0) ===
+
+shipper> Hi, this is Jordan at Tupelo Home Goods, account ACCT-1001. Where is load RL-48213 right now?
+   [tool] lookup_load({"load_id": "RL-48213"})
+   [tool] lookup_shipper({"account": "ACCT-1001"})
+agent> Hi Jordan, RL-48213 is in transit with Cypress Lane Trucking (MC-884213). It was picked up in Memphis on 10/27 at 8:20 AM, and the last check call was at 9:15 AM today in Texarkana, TX, reported as rolling with no issues.
+
+The current ETA is 1:30 PM today in Dallas, which is 30 minutes ahead of the 2:00 PM delivery appointment. If you need a more recent update, our support desk is at 555-0142.
+   (2.6s)
+
+shipper> How does your detention policy work?
+   [tool] search_policy({"query": "detention policy free time per hour billing increments cap"})
+agent> Here's how detention works at Ridgeline:
+
+- The first 2 hours at pickup and at delivery are free.
+- After that, it's $75 per hour, billed in 15-minute increments.
+- Each stop is capped at $600.
+- To be billed, detention needs in and out times recorded on the signed BOL.
+
+If you think detention applies to a load, I can submit a detention review request to billing. Billing makes the final call on any charges.
+   (2.17s)
+
+shipper> On RL-48251 the truck sat at the receiver for 4.25 hours on Oct 24. Please send that detention to billing for review.
+
+   [approval node] Send detention to billing for review (shipper ACCT-1001). Approve, edit the arguments, or reject.
+   [scripted reviewer] approve
+   [tool] lookup_load({"load_id": "RL-48251"})
+   [tool] request_detention_review({"load_id": "RL-48251", "hours": 4.25})
+agent> The detention review for RL-48251 has been filed with billing under reference DET-942164.
+
+The signed BOL shows in at 7:00 AM and out at 11:15 AM on Oct 24, which is 4.25 hours on site. After the 2 free hours, that leaves 2.25 billable hours. At $75/hour, the policy estimate is $168.75, under the $600 stop cap. Billing will review it and make the final decision.
+   (3.84s)
+
+shipper> Also, for the future: our dock closes at 3pm and we always need a liftgate at delivery.
+   [tool] remember_shipper_fact({"fact": "Dock closes at 3pm (delivery side). Always needs a liftgate at delivery."})
+agent> Thanks, Jordan. I've saved that your delivery dock closes at 3 PM and that you always need a liftgate at delivery. We'll keep those in mind for future appointments and scheduling.
+   (1.88s)
+
+Actions recorded in thread A: ['DET-942164 detention_review']
+Long-term memory for ACCT-1001: ['Dock closes at 3pm (delivery side). Always needs a liftgate at delivery.']
+
+=== Thread B (support-ed1995db): new thread, no shared messages, same store ===
+Recalled into thread B's system prompt at start: ['Dock closes at 3pm (delivery side). Always needs a liftgate at delivery.']
+
+shipper> Hi again. We might push the pickup on RL-48410 to late Friday afternoon. Anything I should know?
+   [tool] lookup_load({"load_id": "RL-48410"})
+agent> RL-48410 (Tupelo, MS to Nashville, TN) is currently booked for pickup **Friday 10/30 at 9:00 AM** and delivery **Saturday 10/31 at 1:00 PM**. Carrier is Volunteer LTL, and no check calls are on file yet.
+
+- **Delivery timing:** Your delivery dock closes at 3 PM, and the 1 PM Saturday appointment is before that. A late Friday pickup should still leave time to reach Nashville for Saturday, but the carrier needs to confirm the new pickup time and the transit.
+- **Liftgate:** Delivery still needs a liftgate, which is already on the BOL.
+- **Not yet changed:** I can't reschedule the pickup from here. Tell me the exact time you want, and I can escalate the change to our ops team so they can confirm it with Volunteer LTL.
+   (7.11s)
+
+Memory recalled in thread B reply: yes
+Spend: {'model_calls': 11, 'cost_usd': 0.005616, 'input_tokens': 44301, 'output_tokens': 2372}

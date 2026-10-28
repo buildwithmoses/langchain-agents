@@ -1,0 +1,7 @@
+{
+  "no_error": 1.0,
+  "answered": 1.0,
+  "rubric": 0.8,
+  "paused_when_required": 1.0,
+  "latency_p50_s": 3.73
+}

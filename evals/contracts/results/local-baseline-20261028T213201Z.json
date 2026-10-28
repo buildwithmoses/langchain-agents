@@ -1,0 +1,284 @@
+{
+  "experiment": "only-jewel-95",
+  "langsmith_upload": false,
+  "variant": "baseline",
+  "model": "openrouter:anthropic/claude-haiku-5.5",
+  "judge": "openrouter:openai/gpt-6.1-terra",
+  "dataset": "lca-contracts-v1",
+  "timestamp": "2026-10-28T21:32:01+00:00",
+  "metrics": {
+    "deviation_recall": 1.0,
+    "deviation_recall_strict": 1.0,
+    "high_severity_recall": 1.0,
+    "deviation_precision": 1.0,
+    "extraction_value_accuracy": 1.0,
+    "quote_verification_rate": 1.0,
+    "grounded_decision_rate": 1.0,
+    "compliant_false_alarms": 0,
+    "compliant_clean": 1.0,
+    "needs_check_total": 0,
+    "memo_clarity": 0.829,
+    "cost_per_agreement_usd": 0.00374,
+    "latency_p50_s": 12.6,
+    "latency_max_s": 18.17,
+    "examples_scored": 8,
+    "examples_total": 8
+  },
+  "agreements_with_first_pass_quote_failures": 1,
+  "spend_usd": {
+    "reviewer": 0.02992,
+    "judge": 0.01774,
+    "total": 0.04767
+  },
+  "wall_s": 36.5,
+  "per_example": [
+    {
+      "contract": "01-bluegrass-haulers.md",
+      "carrier": "Bluegrass Haulers LLC",
+      "expected": [],
+      "surfaced": [],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 7.73,
+        "latency_incl_review_s": 7.73,
+        "model_calls": 3,
+        "cost_usd": 0.003421,
+        "input_tokens": 17749,
+        "output_tokens": 3292
+      }
+    },
+    {
+      "contract": "04-cumberland-freightways.md",
+      "carrier": "Cumberland Freightways Co.",
+      "expected": [
+        "certificate_holder",
+        "insurance_cargo",
+        "non_solicit"
+      ],
+      "surfaced": [
+        "certificate_holder",
+        "insurance_cargo",
+        "non_solicit"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 12.05,
+        "latency_incl_review_s": 12.05,
+        "model_calls": 4,
+        "cost_usd": 0.00355,
+        "input_tokens": 15930,
+        "output_tokens": 3913
+      }
+    },
+    {
+      "contract": "02-iron-horse-transport.md",
+      "carrier": "Iron Horse Transport, Inc.",
+      "expected": [
+        "cargo_liability",
+        "indemnity",
+        "payment_terms"
+      ],
+      "surfaced": [
+        "cargo_liability",
+        "indemnity",
+        "payment_terms"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 16.11,
+        "latency_incl_review_s": 16.11,
+        "model_calls": 4,
+        "cost_usd": 0.003806,
+        "input_tokens": 16559,
+        "output_tokens": 4300
+      }
+    },
+    {
+      "contract": "03-delta-plains-logistics.md",
+      "carrier": "Delta Plains Logistics LLC",
+      "expected": [
+        "auto_renewal",
+        "governing_law",
+        "termination_notice",
+        "venue"
+      ],
+      "surfaced": [
+        "auto_renewal",
+        "governing_law",
+        "termination_notice",
+        "venue"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 12.6,
+        "latency_incl_review_s": 12.6,
+        "model_calls": 4,
+        "cost_usd": 0.003692,
+        "input_tokens": 16362,
+        "output_tokens": 4111
+      }
+    },
+    {
+      "contract": "07-tristar-express.md",
+      "carrier": "Tristar Express Lines, Inc.",
+      "expected": [
+        "indemnity",
+        "venue"
+      ],
+      "surfaced": [
+        "indemnity",
+        "venue"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 10.73,
+        "latency_incl_review_s": 10.73,
+        "model_calls": 4,
+        "cost_usd": 0.00352,
+        "input_tokens": 15781,
+        "output_tokens": 3884
+      }
+    },
+    {
+      "contract": "05-red-river-carriers.md",
+      "carrier": "Red River Carriers, Inc.",
+      "expected": [
+        "cargo_liability",
+        "liability_cap_own_negligence"
+      ],
+      "surfaced": [
+        "cargo_liability",
+        "liability_cap_own_negligence"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 13.82,
+        "latency_incl_review_s": 13.82,
+        "model_calls": 4,
+        "cost_usd": 0.003644,
+        "input_tokens": 15387,
+        "output_tokens": 4211
+      }
+    },
+    {
+      "contract": "08-gulfline-carriers.md",
+      "carrier": "Gulfline Carriers LP",
+      "expected": [
+        "auto_renewal",
+        "cargo_liability",
+        "insurance_gl"
+      ],
+      "surfaced": [
+        "auto_renewal",
+        "cargo_liability",
+        "insurance_gl"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 12.6,
+        "latency_incl_review_s": 12.6,
+        "model_calls": 4,
+        "cost_usd": 0.003701,
+        "input_tokens": 15200,
+        "output_tokens": 4362
+      }
+    },
+    {
+      "contract": "06-ozark-ridge-trucking.md",
+      "carrier": "Ozark Ridge Trucking LLC",
+      "expected": [
+        "insurance_auto",
+        "termination_notice"
+      ],
+      "surfaced": [
+        "insurance_auto",
+        "termination_notice"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "ungrounded_quotes": [],
+      "first_pass_problems": {
+        "insurance": [
+          "certificate_holder_named=true but the quotes do not contain 'certificate holder'"
+        ]
+      },
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "baseline",
+        "latency_s": 18.17,
+        "latency_incl_review_s": 18.17,
+        "model_calls": 5,
+        "cost_usd": 0.00459,
+        "input_tokens": 19952,
+        "output_tokens": 5190
+      }
+    }
+  ]
+}

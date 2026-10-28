@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "support": "./src/langchain_agents/support/graph.py:graph",
+    "research": "./src/langchain_agents/research/graph.py:graph",
+    "contracts": "./src/langchain_agents/contracts/graph.py:graph",
+    "analyst": "./src/langchain_agents/analyst/graph.py:graph"
+  },
+  "env": ".env"
+}

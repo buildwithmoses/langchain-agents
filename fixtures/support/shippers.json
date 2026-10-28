@@ -1,0 +1,6 @@
+[
+  {"account": "ACCT-1001", "name": "Tupelo Home Goods", "city": "Tupelo, MS", "contact": "Jordan Pike", "email": "jordan.pike@tupelohome.example.com", "phone": "555-0161", "payment_terms": "net 30", "modes": ["dry van", "LTL"], "status": "active", "open_loads": ["RL-48213", "RL-48410"]},
+  {"account": "ACCT-1002", "name": "Delta Fresh Produce", "city": "Greenville, MS", "contact": "Maya Thornton", "email": "maya.thornton@deltafresh.example.com", "phone": "555-0172", "payment_terms": "net 30", "modes": ["reefer"], "status": "active", "open_loads": ["RL-48307"]},
+  {"account": "ACCT-1003", "name": "Bluff City Steel", "city": "Memphis, TN", "contact": "Ray Okafor", "email": "ray.okafor@bluffcitysteel.example.com", "phone": "555-0183", "payment_terms": "net 30", "modes": ["flatbed"], "status": "active", "open_loads": []},
+  {"account": "ACCT-1004", "name": "Magnolia Pet Supply", "city": "Jackson, MS", "contact": "Lena Ruiz", "email": "lena.ruiz@magnoliapet.example.com", "phone": "555-0194", "payment_terms": "net 30", "modes": ["dry van"], "status": "active", "open_loads": ["RL-48399"]}
+]

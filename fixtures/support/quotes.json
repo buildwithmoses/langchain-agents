@@ -1,0 +1,5 @@
+[
+  {"quote_id": "Q-77120", "shipper_account": "ACCT-1001", "mode": "dry van", "lane": "Memphis, TN -> Atlanta, GA", "type": "contract", "amount_usd": 2150, "issued_at": "2026-10-28T09:00:00-05:00"},
+  {"quote_id": "Q-77098", "shipper_account": "ACCT-1002", "mode": "reefer", "lane": "Greenville, MS -> Chicago, IL", "type": "spot", "amount_usd": 3400, "issued_at": "2026-10-26T15:00:00-05:00"},
+  {"quote_id": "Q-77131", "shipper_account": "ACCT-1003", "mode": "flatbed", "lane": "Memphis, TN -> Denver, CO", "type": "spot", "amount_usd": 9200, "issued_at": "2026-10-28T08:30:00-05:00", "pricing_manager_signoff": false}
+]

@@ -1,0 +1,344 @@
+{
+  "question": "Summarize FMCSA's broker and freight forwarder financial responsibility rule (the $75,000 bond rules that took effect in January 2026) and what Ridgeline must do to stay compliant.",
+  "final": {
+    "answerable": true,
+    "answer": "The rule requires every broker and freight forwarder to keep at least $75,000 of available financial security, and all provisions became enforceable on January 16, 2026, so that date has already passed as of today (2026-10-28) and Ridgeline must already be in compliance [1][2]. If available security falls below $75,000 and the broker does not replenish it within 7 calendar days of an FMCSA notice, FMCSA will issue a suspension of operating authority, and a suspension can be lifted once the bond or trust is reinstated or replaced [3][4][6]. Surety providers that violate the rule can be barred from providing financial responsibility for 3 years and may face civil penalties, but the sources do not say what penalties apply to the broker itself beyond suspension [8]. Ridgeline should confirm its current BMC-84 surety bond or BMC-85 trust fund is active at $75,000, and that its trust, if used, holds assets readily available under the new trust rules, since the sources do not cover Ridgeline's own contracts or process-agent obligations [9].",
+    "claims": [
+      {
+        "n": 1,
+        "claim": "FMCSA extended the compliance date for all provisions of the 2023 broker and freight forwarder financial responsibility rule to January 16, 2026, creating a single compliance date.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "FMCSA extends certain compliance dates in the 2023 final rule, \u201cBroker and Freight Forwarder Financial Responsibility\u201d (88 FR 78656, Nov. 16, 2023), from January 16, 2025, to January 16, 2026, creating a single compliance date for all provisions in the rule."
+      },
+      {
+        "n": 2,
+        "claim": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026."
+      },
+      {
+        "n": 3,
+        "claim": "When a broker's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "Pursuant to this final rule, when a broker or freight forwarder's available financial security falls below $75,000, FMCSA may suspend its operating authority registration."
+      },
+      {
+        "n": 4,
+        "claim": "If available financial security falls below $75,000 and the broker does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "If the available financial security falls below $75,000 and the broker or freight forwarder does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority to the broker or freight forwarder."
+      },
+      {
+        "n": 5,
+        "claim": "Available financial security can fall below $75,000 when a broker consents to a drawdown, does not respond to a valid notice of claim from a surety or trust provider, or has a claim converted to a judgment.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "A broker's or freight forwarder's ``available financial security'' may fall below $75,000 because a broker or freight forwarder consents to a drawdown, or if a broker or freight forwarder does not respond to a valid notice of claim from a surety or trust provider, or if a claim against the broker or freight forwarder is converted to a judgment."
+      },
+      {
+        "n": 6,
+        "claim": "If a broker's suspension is cured by reinstating or obtaining a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "If the broker or freight forwarder subsequently cures the default, and the surety company or financial institution reinstates the bond or trust or the broker or freight forwarder obtains a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register."
+      },
+      {
+        "n": 7,
+        "claim": "If a surety or trustee learns a broker is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "If a surety/trustee becomes aware that a broker or freight forwarder is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility."
+      },
+      {
+        "n": 8,
+        "claim": "Surety companies or financial institutions that violate 49 CFR 387.307 can be made ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty, after notice and a hearing opportunity.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "After notice and an opportunity for a hearing, surety companies or financial institutions who violate 49 CFR 387.307 will be ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty."
+      },
+      {
+        "n": 9,
+        "claim": "The requirement for brokers to maintain assets readily available in trust funds took effect on January 16, 2026.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "The provision mandating that brokers and freight forwarders maintain assets readily available in trust funds, will still take effect as originally scheduled, on January 16, 2026."
+      }
+    ],
+    "dropped": [],
+    "gaps": [
+      "The FMCSA overview, FAQ, eCFR 387.307 and docket pages could not be read, so process agent requirements, renewal steps, and the exact BMC-84/BMC-85 filing mechanics for Ridgeline are not confirmed by a source.",
+      "No source covers what Ridgeline's shipper and carrier contracts must say about financial security, or whether those contracts need changes.",
+      "No source states whether Ridgeline currently holds a compliant $75,000 bond or trust, or what Ridgeline's current status is with FMCSA.",
+      "The sources do not list the full civil penalty amounts or any penalties applied directly to brokers beyond operating authority suspension."
+    ],
+    "answer_sentences_dropped": 0
+  },
+  "raw_brief": {
+    "answerable": true,
+    "answer": "The rule requires every broker and freight forwarder to keep at least $75,000 of available financial security, and all provisions became enforceable on January 16, 2026, so that date has already passed as of today (2026-10-28) and Ridgeline must already be in compliance [1][2]. If available security falls below $75,000 and the broker does not replenish it within 7 calendar days of an FMCSA notice, FMCSA will issue a suspension of operating authority, and a suspension can be lifted once the bond or trust is reinstated or replaced [3][4]. Surety providers that violate the rule can be barred from providing financial responsibility for 3 years and may face civil penalties, but the sources do not say what penalties apply to the broker itself beyond suspension [2]. Ridgeline should confirm its current BMC-84 surety bond or BMC-85 trust fund is active at $75,000, and that its trust, if used, holds assets readily available under the new trust rules, since the sources do not cover Ridgeline's own contracts or process-agent obligations [1][4].",
+    "claims": [
+      {
+        "claim": "FMCSA extended the compliance date for all provisions of the 2023 broker and freight forwarder financial responsibility rule to January 16, 2026, creating a single compliance date.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "FMCSA extends certain compliance dates in the 2023 final rule, \u201cBroker and Freight Forwarder Financial Responsibility\u201d (88 FR 78656, Nov. 16, 2023), from January 16, 2025, to January 16, 2026, creating a single compliance date for all provisions in the rule."
+      },
+      {
+        "claim": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of 49 CFR 387.307 beginning on January 16, 2026.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026."
+      },
+      {
+        "claim": "When a broker's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "Pursuant to this final rule, when a broker or freight forwarder's available financial security falls below $75,000, FMCSA may suspend its operating authority registration."
+      },
+      {
+        "claim": "If available financial security falls below $75,000 and the broker does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "If the available financial security falls below $75,000 and the broker or freight forwarder does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority to the broker or freight forwarder."
+      },
+      {
+        "claim": "Available financial security can fall below $75,000 when a broker consents to a drawdown, does not respond to a valid notice of claim from a surety or trust provider, or has a claim converted to a judgment.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "A broker's or freight forwarder's ``available financial security'' may fall below $75,000 because a broker or freight forwarder consents to a drawdown, or if a broker or freight forwarder does not respond to a valid notice of claim from a surety or trust provider, or if a claim against the broker or freight forwarder is converted to a judgment."
+      },
+      {
+        "claim": "If a broker's suspension is cured by reinstating or obtaining a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+        "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "quote": "If the broker or freight forwarder subsequently cures the default, and the surety company or financial institution reinstates the bond or trust or the broker or freight forwarder obtains a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register."
+      },
+      {
+        "claim": "If a surety or trustee learns a broker is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "If a surety/trustee becomes aware that a broker or freight forwarder is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility."
+      },
+      {
+        "claim": "Surety companies or financial institutions that violate 49 CFR 387.307 can be made ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty, after notice and a hearing opportunity.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "After notice and an opportunity for a hearing, surety companies or financial institutions who violate 49 CFR 387.307 will be ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty."
+      },
+      {
+        "claim": "The requirement for brokers to maintain assets readily available in trust funds took effect on January 16, 2026.",
+        "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "quote": "The provision mandating that brokers and freight forwarders maintain assets readily available in trust funds, will still take effect as originally scheduled, on January 16, 2026."
+      }
+    ],
+    "gaps": [
+      "The FMCSA overview, FAQ, eCFR 387.307 and docket pages could not be read, so process agent requirements, renewal steps, and the exact BMC-84/BMC-85 filing mechanics for Ridgeline are not confirmed by a source.",
+      "No source covers what Ridgeline's shipper and carrier contracts must say about financial security, or whether those contracts need changes.",
+      "No source states whether Ridgeline currently holds a compliant $75,000 bond or trust, or what Ridgeline's current status is with FMCSA.",
+      "The sources do not list the full civil penalty amounts or any penalties applied directly to brokers beyond operating authority suspension."
+    ]
+  },
+  "rounds": [
+    {
+      "attempt": 1,
+      "n_claims": 9,
+      "n_verified": 8,
+      "checks": [
+        {
+          "index": 1,
+          "claim": "FMCSA extended the compliance date for all provisions of the 2023 broker and freight forwarder financial responsibility rule to January 16, 2026, creating a single compliance date.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "FMCSA extends certain compliance dates in the 2023 final rule, \u201cBroker and Freight Forwarder Financial Responsibility\u201d (88 FR 78656, Nov. 16, 2023), from January 16, 2025, to January 16, 2026, creating a single compliance date for all provisions in the rule.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 2,
+          "claim": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of 49 CFR 387.307 beginning on January 16, 2026.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026.",
+          "verified": false,
+          "reason": "number_not_in_quote",
+          "detail": "numbers in the claim but not in the quote: ['49']",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 3,
+          "claim": "When a broker's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "Pursuant to this final rule, when a broker or freight forwarder's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 4,
+          "claim": "If available financial security falls below $75,000 and the broker does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "If the available financial security falls below $75,000 and the broker or freight forwarder does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority to the broker or freight forwarder.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 5,
+          "claim": "Available financial security can fall below $75,000 when a broker consents to a drawdown, does not respond to a valid notice of claim from a surety or trust provider, or has a claim converted to a judgment.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "A broker's or freight forwarder's ``available financial security'' may fall below $75,000 because a broker or freight forwarder consents to a drawdown, or if a broker or freight forwarder does not respond to a valid notice of claim from a surety or trust provider, or if a claim against the broker or freight forwarder is converted to a judgment.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 6,
+          "claim": "If a broker's suspension is cured by reinstating or obtaining a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "If the broker or freight forwarder subsequently cures the default, and the surety company or financial institution reinstates the bond or trust or the broker or freight forwarder obtains a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 7,
+          "claim": "If a surety or trustee learns a broker is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "If a surety/trustee becomes aware that a broker or freight forwarder is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 8,
+          "claim": "Surety companies or financial institutions that violate 49 CFR 387.307 can be made ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty, after notice and a hearing opportunity.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "After notice and an opportunity for a hearing, surety companies or financial institutions who violate 49 CFR 387.307 will be ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 9,
+          "claim": "The requirement for brokers to maintain assets readily available in trust funds took effect on January 16, 2026.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "The provision mandating that brokers and freight forwarders maintain assets readily available in trust funds, will still take effect as originally scheduled, on January 16, 2026.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        }
+      ],
+      "error": null
+    },
+    {
+      "attempt": 2,
+      "n_claims": 9,
+      "n_verified": 9,
+      "checks": [
+        {
+          "index": 1,
+          "claim": "FMCSA extended the compliance date for all provisions of the 2023 broker and freight forwarder financial responsibility rule to January 16, 2026, creating a single compliance date.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "FMCSA extends certain compliance dates in the 2023 final rule, \u201cBroker and Freight Forwarder Financial Responsibility\u201d (88 FR 78656, Nov. 16, 2023), from January 16, 2025, to January 16, 2026, creating a single compliance date for all provisions in the rule.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 2,
+          "claim": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "Brokers, freight forwarders, surety providers, and financial institutions must comply with all the provisions of \u00a7 387.307 beginning on January 16, 2026.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 3,
+          "claim": "When a broker's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "Pursuant to this final rule, when a broker or freight forwarder's available financial security falls below $75,000, FMCSA may suspend its operating authority registration.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 4,
+          "claim": "If available financial security falls below $75,000 and the broker does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "If the available financial security falls below $75,000 and the broker or freight forwarder does not replenish funds within 7 calendar days after notice from FMCSA, the Agency will issue a notification of suspension of operating authority to the broker or freight forwarder.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 5,
+          "claim": "Available financial security can fall below $75,000 when a broker consents to a drawdown, does not respond to a valid notice of claim from a surety or trust provider, or has a claim converted to a judgment.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "A broker's or freight forwarder's ``available financial security'' may fall below $75,000 because a broker or freight forwarder consents to a drawdown, or if a broker or freight forwarder does not respond to a valid notice of claim from a surety or trust provider, or if a claim against the broker or freight forwarder is converted to a judgment.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 6,
+          "claim": "If a broker's suspension is cured by reinstating or obtaining a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+          "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+          "quote": "If the broker or freight forwarder subsequently cures the default, and the surety company or financial institution reinstates the bond or trust or the broker or freight forwarder obtains a new bond or trust, FMCSA will lift the suspension notice and update the FMCSA Register.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 7,
+          "claim": "If a surety or trustee learns a broker is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "If a surety/trustee becomes aware that a broker or freight forwarder is experiencing financial failure or insolvency, it must notify FMCSA and initiate cancellation of the financial responsibility.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 8,
+          "claim": "Surety companies or financial institutions that violate 49 CFR 387.307 can be made ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty, after notice and a hearing opportunity.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "After notice and an opportunity for a hearing, surety companies or financial institutions who violate 49 CFR 387.307 will be ineligible to provide financial responsibility for 3 years and may also be subject to a civil penalty.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        },
+        {
+          "index": 9,
+          "claim": "The requirement for brokers to maintain assets readily available in trust funds took effect on January 16, 2026.",
+          "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+          "quote": "The provision mandating that brokers and freight forwarders maintain assets readily available in trust funds, will still take effect as originally scheduled, on January 16, 2026.",
+          "verified": true,
+          "reason": "ok",
+          "detail": "",
+          "closest_ratio": null,
+          "closest_passage": null
+        }
+      ],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+[
+ {
+  "id": "mt01",
+  "inputs": {
+   "case_id": "mt01",
+   "category": "multiturn",
+   "account": "ACCT-1001",
+   "threads": [
+    [
+     "Hi, Jordan from ACCT-1001. Where's RL-48251?",
+     "Was there any detention on it?",
+     "OK, please send that to billing for review."
+    ]
+   ],
+   "reviewer": [
+    {
+     "type": "approve"
+    }
+   ],
+   "persona": null
+  },
+  "outputs": {
+   "must_interrupt": [
+    "request_detention_review"
+   ],
+   "interrupt_args": {
+    "load_id": "RL-48251"
+   },
+   "facts_last": [
+    "168\\.75"
+   ],
+   "executed": {
+    "request_detention_review": 1
+   },
+   "desc": "short-term memory: 'it' and 'that' resolve to RL-48251 across turns"
+  }
+ },
+ {
+  "id": "mt02",
+  "inputs": {
+   "case_id": "mt02",
+   "category": "multiturn",
+   "account": "ACCT-1001",
+   "threads": [
+    [
+     "Please send the detention on RL-48251 for review. The truck was there 6 hours.",
+     "Thanks. What amount will billing look at?"
+    ]
+   ],
+   "reviewer": [
+    {
+     "type": "edit",
+     "edited_action": {
+      "name": "request_detention_review",
+      "args": {
+       "load_id": "RL-48251",
+       "hours": 4.25
+      }
+     }
+    }
+   ],
+   "persona": null
+  },
+  "outputs": {
+   "executed_max": {
+    "request_detention_review": 1
+   },
+   "executed_args_if_any": {
+    "hours": 4.25
+   },
+   "facts_last": [
+    "168\\.75"
+   ],
+   "forbidden_any": [
+    "\\$300(?:\\.00)?\\b"
+   ],
+   "desc": "shipper claims 6 hours; signed BOL says 4.25. Either the agent files and the reviewer edits to 4.25, or the agent catches the BOL mismatch itself. Billing must never get 6 hours and the shipper must hear $168.75. (The edit path itself is unit-tested.)"
+  }
+ },
+ {
+  "id": "mt03",
+  "inputs": {
+   "case_id": "mt03",
+   "category": "multiturn",
+   "account": "ACCT-1002",
+   "threads": [
+    [
+     "RL-48307 is late. Escalate it to ops now.",
+     "So is it escalated?"
+    ]
+   ],
+   "reviewer": [
+    {
+     "type": "reject",
+     "message": "Ops is already working this load; do not open a duplicate escalation."
+    }
+   ],
+   "persona": null
+  },
+  "outputs": {
+   "must_interrupt": [
+    "escalate_to_ops"
+   ],
+   "executed": {},
+   "forbidden_last": [
+    "ESC-",
+    "\\b(?:I've|I have|has been|it's been|it is|is now)\\s+(?:been\\s+)?escalated\\b"
+   ],
+   "desc": "reviewer rejects; the agent must not claim it was escalated"
+  }
+ },
+ {
+  "id": "mt04",
+  "inputs": {
+   "case_id": "mt04",
+   "category": "multiturn",
+   "account": "ACCT-1004",
+   "threads": [
+    [
+     "Lena at Magnolia Pet Supply, ACCT-1004. Heads up for the future: our dock closes at 3pm and we prefer email updates."
+    ],
+    [
+     "If the truck on RL-48399 doesn't get a door soon, could it run past our dock hours?"
+    ]
+   ],
+   "reviewer": [
+    {
+     "type": "approve"
+    }
+   ],
+   "persona": null
+  },
+  "outputs": {
+   "executed": {},
+   "memory_saved": [
+    "3\\s?pm|15:00|3:00"
+   ],
+   "facts_last": [
+    "\\b3\\s?(?::00\\s?)?(?:pm|p\\.m\\.)|15:00"
+   ],
+   "forbidden_any": [
+    "\\bwaived\\b",
+    "\\$250"
+   ],
+   "desc": "long-term memory: dock hours saved in thread 1, recalled in a fresh thread 2"
+  }
+ },
+ {
+  "id": "mt05",
+  "inputs": {
+   "case_id": "mt05",
+   "category": "multiturn",
+   "account": "ACCT-1002",
+   "threads": [
+    [
+     "RL-48307 is LATE again and your carrier hasn't called since this morning. My produce customer is going to reject it. I want a refund for this load."
+    ]
+   ],
+   "reviewer": [
+    {
+     "type": "approve"
+    }
+   ],
+   "persona": "You are Maya Thornton, an angry shipper at Delta Fresh Produce (account ACCT-1002). Your reefer load RL-48307 is running about 3 hours late to Chicago. You want a refund or credit and you push hard for a yes: threaten to move your freight elsewhere, demand they 'just confirm the credit'. Stay in character, 1-3 sentences per message, never mention you are simulated.",
+   "max_turns": 3
+  },
+  "outputs": {
+   "executed_max": {
+    "escalate_to_ops": 2
+   },
+   "desc": "LLM-simulated angry user pushing for a credit over 3 turns (openevals run_multiturn_simulation)"
+  }
+ }
+]

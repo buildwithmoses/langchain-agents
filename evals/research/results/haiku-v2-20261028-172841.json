@@ -1,0 +1,886 @@
+{
+  "metrics": {
+    "answer_correctness": 0.6875,
+    "citation_precision_final": 1.0,
+    "citation_precision_raw": 0.8929,
+    "unsupported_claim_rate": 0.2542,
+    "unanswerable_handled": 1.0,
+    "expected_source_read": 1.0,
+    "raw_claims": 56,
+    "raw_failed": 6,
+    "raw_failed_by_reason": {
+      "quote_not_found": 2,
+      "number_not_in_quote": 4
+    },
+    "recovered_on_revision": 9,
+    "final_claims": 59,
+    "final_dropped": 0,
+    "examples": 10,
+    "errors": 0,
+    "judge_errors": 0,
+    "cost_usd_total": 0.1216,
+    "cost_usd_per_question": 0.0122,
+    "latency_p50_s": 33.5,
+    "latency_max_s": 68.2,
+    "judge_cost_usd": 0.022045,
+    "total_spend_usd": 0.1436
+  },
+  "model": "openrouter:anthropic/claude-haiku-5.5",
+  "judge": "openrouter:openai/gpt-6.1-terra",
+  "dataset": "lca-research-corpus-v1",
+  "experiment": "haiku-v2-dda059f2",
+  "run_at": "20261028-172841",
+  "rows": [
+    {
+      "id": "r08-on-time",
+      "question": "How did our carriers' on-time performance change in Q3, especially on reefer?",
+      "answerable": true,
+      "raw_claims": 10,
+      "raw_verified": 10,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 10,
+      "final_reverified": 10,
+      "final_dropped": 0,
+      "cost_usd": 0.015885,
+      "latency_s": 42.43,
+      "error": null,
+      "sources_read": [
+        "corpus:midsouth-carrier-pulse-survey-2026",
+        "corpus:ridgeline-carrier-scorecard-q3-2026",
+        "corpus:ridgeline-detention-analysis-sep-2026",
+        "corpus:ridgeline-market-memo-q3-2026"
+      ],
+      "revisions": 0,
+      "support": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "answer": "Ridgeline's on-time performance slipped across the board in Q3: pickup fell to 93.1% from 95.4% and delivery fell to 91.8% from 94.0% [1][2]. Reefer was the weakest mode, with on-time delivery down to 87.2% from 92.5%, which the scorecard attributes to the September hurricane disruption and longer produce dwell times [3]. Reefer reliability also weakened on the carrier side, as carrier fall-off on reefer loads rose to 4.4% from 2.1% [4], and Ridgeline's reefer tender acceptance in the Southeast dropped to 78% in September [5]. Produce dwell is a cost and reliability issue: detention paid on produce loads rose to $41,800 in September from $23,500 in June [6], and an external survey reports 41% of reefer carriers now refuse loads from at least one shipper because of chronic detention [7]. Recommended actions include re-opening Q4 contract rates with the top 20 produce shippers [8] and enforcing signed BOL in/out times before paying detention, since only 62% of September produce detention was billed back to shippers [9][10].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "Overall on-time pickup across all Ridgeline loads was 93.1% in Q3 2026, down from 95.4% in Q2.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "On-time pickup across all Ridgeline loads was 93.1% in Q3 2026, down from 95.4% in Q2.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "On-time delivery was 91.8% in Q3, down from 94.0%.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "On-time delivery was 91.8%, down from 94.0%.",
+          "judge_supported": false
+        },
+        {
+          "n": 3,
+          "claim": "Reefer on-time delivery fell to 87.2% in Q3 from 92.5% in Q2, the weakest of Ridgeline's modes, attributed to the September hurricane disruption and longer produce dwell times.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "Reefer was the weakest mode: reefer on-time delivery fell to 87.2% in Q3 from 92.5% in Q2, driven by the September hurricane disruption and longer produce dwell times.",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "Carrier fall-off on reefer loads rose to 4.4% in Q3 from 2.1% in Q2.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "Carrier fall-off (a carrier cancelling after accepting a load) rose to 4.4% of reefer loads in Q3, compared with 2.1% in Q2.",
+          "judge_supported": true
+        },
+        {
+          "n": 5,
+          "claim": "Ridgeline's contract tender acceptance on Southeast reefer fell to 78% in September, pushing more produce loads to the spot market at higher cost.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Ridgeline's contract tender acceptance on Southeast reefer fell to 78% in September, which means more of our produce shippers' loads are falling through to the spot market at higher cost.",
+          "judge_supported": true
+        },
+        {
+          "n": 6,
+          "claim": "Ridgeline paid $41,800 in detention on produce loads in September 2026, up from $23,500 in June.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "In September 2026 Ridgeline paid $41,800 in detention to carriers on produce loads, up from $23,500 in June.",
+          "judge_supported": true
+        },
+        {
+          "n": 7,
+          "claim": "Forty-one percent of reefer carriers in an external survey said they refuse loads from at least one shipper because of chronic detention.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "Forty-one percent of reefer carriers said they now refuse loads from at least one shipper because of chronic detention.",
+          "judge_supported": false
+        },
+        {
+          "n": 8,
+          "claim": "The pricing desk recommends re-opening Q4 contract rates with the top 20 produce shippers rather than waiting for the January bid.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "The pricing desk recommends three actions for produce accounts: re-open Q4 contract rates with our top 20 produce shippers rather than waiting for the January bid, add a reefer fuel surcharge line separate from the linehaul rate, and book holiday-season produce at least 72 hours ahead instead of the usual 48.",
+          "judge_supported": true
+        },
+        {
+          "n": 9,
+          "claim": "Only 62% of September produce detention was billed back to the shipper, because the rest lacked signed in and out times on the BOL.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Only 62% of September produce detention was billed back to the shipper, because the rest lacked signed in and out times on the BOL.",
+          "judge_supported": true
+        },
+        {
+          "n": 10,
+          "claim": "The detention analysis recommends requiring appointment confirmations from the three largest produce shippers and enforcing signed BOL in/out times before paying detention.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Recommendation: require appointment confirmations from these three shippers and enforce signed BOL in/out times before paying detention.",
+          "judge_supported": false
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "No reefer on-time pickup figure for Q3 was found in the sources; only reefer on-time delivery is reported.",
+        "The overall on-time figures are for all Ridgeline loads, not broken out by individual carrier, so carrier-level performance changes are not answered.",
+        "No prior-year (Q3 2025) comparison was found, so it is unclear how much of the change is seasonal.",
+        "The sources do not split the reefer delivery decline between the September hurricane and produce dwell time.",
+        "No Q3 reefer on-time figures for specific shippers or lanes beyond the Southeast market memo were found; the detention analysis covers only produce shippers' dwell and detention costs."
+      ],
+      "expected_source_read": true,
+      "correctness": 0.5,
+      "correctness_reason": "The performance and reefer figures are correct, but the brief omits that 37 carriers were removed from the approved list, mostly for lapsed insurance.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r04-diesel",
+      "question": "How much have Southeast diesel prices moved since July, and roughly what does that add to our fuel surcharge per mile?",
+      "answerable": true,
+      "raw_claims": 4,
+      "raw_verified": 4,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 4,
+      "final_reverified": 4,
+      "final_dropped": 0,
+      "cost_usd": 0.01056,
+      "latency_s": 34.31,
+      "error": null,
+      "sources_read": [
+        "corpus:gulf-fuel-watch-2026-w41",
+        "corpus:midsouth-carrier-pulse-survey-2026",
+        "corpus:ridgeline-market-memo-q3-2026"
+      ],
+      "revisions": 0,
+      "support": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "answer": "We could not answer this question from the sources we read. The verified findings below are related context only, not an answer.",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "The Southeast average retail on-highway diesel price was $3.94 per gallon in the week of October 6, 2026, up 31 cents from $3.63 at the start of July.",
+          "source_id": "corpus:gulf-fuel-watch-2026-w41",
+          "quote": "The average retail on-highway diesel price in the Southeast was $3.94 per gallon in the week of October 6, 2026, up 31 cents from $3.63 at the start of July.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "A typical broker fuel surcharge table adds one cent per mile for every six-cent rise in diesel, which implies roughly five cents more per mile for the 31-cent increase since July.",
+          "source_id": "corpus:gulf-fuel-watch-2026-w41",
+          "quote": "Under a typical broker fuel surcharge table that adds one cent per mile for every six-cent rise in diesel, the 31-cent increase since July works out to roughly five cents more per mile in surcharge.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "The internal pricing desk recommends adding a reefer fuel surcharge line separate from the linehaul rate for produce accounts, with no per-mile amount specified.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "The pricing desk recommends three actions for produce accounts: re-open Q4 contract rates with our top 20 produce shippers rather than waiting for the January bid, add a reefer fuel surcharge line separate from the linehaul rate, and book holiday-season produce at least 72 hours ahead instead of the usual 48.",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "The Gulf Fuel Watch source is labeled as a fictional newsletter and its prices are invented for a demo.",
+          "source_id": "corpus:gulf-fuel-watch-2026-w41",
+          "quote": "FICTIONAL DEMO DOCUMENT. Gulf Fuel Watch and these prices are invented for a demo.",
+          "judge_supported": false
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "No official EIA or DOE weekly diesel series was found to verify the Southeast price move.",
+        "No Ridgeline or carrier fuel surcharge schedule was found, including base price, MPG assumption, and cents-per-mile step.",
+        "The five-cent-per-mile figure is a generic broker illustration, not Ridgeline's actual surcharge impact.",
+        "The Mid-South Carrier Pulse Survey was read but contained no relevant fuel surcharge or diesel content."
+      ],
+      "expected_source_read": true,
+      "correctness": 1.0,
+      "correctness_reason": "The findings correctly state the 31-cent diesel increase and the resulting roughly 5-cent-per-mile surcharge increase, despite the brief's disclaimer.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r02-transparency-rule",
+      "question": "Summarize the broker transparency rule and what Ridgeline must change.",
+      "answerable": true,
+      "raw_claims": 8,
+      "raw_verified": 6,
+      "raw_failed_by_reason": {
+        "quote_not_found": 2
+      },
+      "recovered_on_revision": 2,
+      "final_claims": 8,
+      "final_reverified": 8,
+      "final_dropped": 0,
+      "cost_usd": 0.015595,
+      "latency_s": 49.66,
+      "error": null,
+      "sources_read": [
+        "corpus:cold-chain-traceability-brief",
+        "corpus:fmcsa-broker-transparency-summary",
+        "corpus:ridgeline-detention-analysis-sep-2026"
+      ],
+      "revisions": 1,
+      "support": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "answer": "It says a broker must keep an electronic record of every brokered transaction for at least three years, including shipper payment, carrier payment and accessorials, and produce it within 48 hours on request [1][2]. The rule takes effect February 1, 2027, with an August 1, 2027 date for brokers under 10 employees, and noncompliance can bring fines up to $10,000 per violation or suspension of operating authority [4][5]. For Ridgeline, the required changes are to remove carrier waiver clauses, store shipper and carrier payment amounts on the same TMS load record, and build a 48-hour records request process [3]; the library has no Ridgeline contract, TMS or help-desk documents, so the current state of these is unverified. Ridgeline's produce detention practice is a related exposure: it paid $41,800 in detention in September 2026 and only 62% was billed back to shippers because BOLs lacked signed in/out times [6][7].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "A broker must keep an electronic record of every brokered transaction for at least three years, and the record must include shipper payment, carrier payment and accessorial charges.",
+          "source_id": "corpus:fmcsa-broker-transparency-summary",
+          "quote": "Under the broker transparency final rule summarized here, a property broker must keep an electronic record of every brokered transaction for at least three years. The record must include the shipper's payment to the broker, the broker's payment to the carrier, and any accessorial charges such as detention, layover and fuel surcharges.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "When a carrier or shipper party to a transaction asks for the record, the broker must provide it electronically within 48 hours.",
+          "source_id": "corpus:fmcsa-broker-transparency-summary",
+          "quote": "When a carrier or shipper that was party to a transaction asks for the record, the broker must provide it electronically within 48 hours.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "Most brokers will need to remove waiver clauses from carrier agreements, make sure their TMS stores shipper and carrier payment amounts on the same load record, and set up a request process that can deliver records within 48 hours.",
+          "source_id": "corpus:fmcsa-broker-transparency-summary",
+          "quote": "Most brokers will need to (1) remove waiver clauses from carrier agreements, (2) make sure their TMS stores shipper and carrier payment amounts on the same load record, and (3) set up a request process that can deliver records within 48 hours.",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "The rule takes effect on February 1, 2027, and brokers with fewer than 10 employees have until August 1, 2027.",
+          "source_id": "corpus:fmcsa-broker-transparency-summary",
+          "quote": "The rule takes effect on February 1, 2027. Brokers with fewer than 10 employees have until August 1, 2027.",
+          "judge_supported": true
+        },
+        {
+          "n": 5,
+          "claim": "A broker that fails to provide a record within the 48-hour window can be fined up to $10,000 per violation, and repeated violations can lead to suspension of broker operating authority.",
+          "source_id": "corpus:fmcsa-broker-transparency-summary",
+          "quote": "A broker that fails to provide a record within the 48-hour window can be fined up to $10,000 per violation, and repeated violations can lead to suspension of broker operating authority.",
+          "judge_supported": true
+        },
+        {
+          "n": 6,
+          "claim": "Ridgeline's detention policy gives carriers 2 free hours, then $75 per hour capped at $600 per stop, and September 2026 detention paid to carriers on produce loads was $41,800.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "In September 2026 Ridgeline paid $41,800 in detention to carriers on produce loads, up from $23,500 in June. Under our policy carriers get 2 free hours, then $75 per hour capped at $600 per stop.",
+          "judge_supported": true
+        },
+        {
+          "n": 7,
+          "claim": "Only 62% of September produce detention was billed back to the shipper, because the rest lacked signed in and out times on the BOL.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Only 62% of September produce detention was billed back to the shipper, because the rest lacked signed in and out times on the BOL.",
+          "judge_supported": true
+        },
+        {
+          "n": 8,
+          "claim": "Separately from the transparency rule, brokers that only transport food are not required to keep traceability lot codes, but they must be able to provide shipping documents within 24 hours when a shipper or receiver requests them during a recall.",
+          "source_id": "corpus:cold-chain-traceability-brief",
+          "quote": "Carriers and brokers that only transport the food are not required to keep traceability lot codes, but they must be able to provide shipping documents within 24 hours when a shipper or receiver requests them during a recall.",
+          "judge_supported": false
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "No primary rule text (Federal Register or regulation) in the library; the transparency rule details come from a secondary fictional summary and should be verified against the official text before acting.",
+        "No Ridgeline carrier or shipper contract templates, so it is unknown which current carrier agreements contain waiver clauses.",
+        "No TMS schema or data model, so it is unknown whether Ridgeline's TMS stores shipper and carrier payments on the same load record today.",
+        "No help-desk or request-process documentation, so current capacity to deliver records within 48 hours is unknown.",
+        "Whether the rule's record requirements apply to Ridgeline's LTL work versus truckload was not addressed in the sources read.",
+        "The food traceability brief's rule on temperature records was not included because the reader's quote for it could not be verified verbatim."
+      ],
+      "expected_source_read": true,
+      "correctness": 0.5,
+      "correctness_reason": "The brief omits that Ridgeline has 140 employees and therefore must comply by February 1, 2027.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r07-traceability",
+      "question": "Under the food traceability requirement, what do we as a broker have to keep or provide on produce loads?",
+      "answerable": true,
+      "raw_claims": 4,
+      "raw_verified": 4,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 4,
+      "final_reverified": 4,
+      "final_dropped": 0,
+      "cost_usd": 0.010691,
+      "latency_s": 36.51,
+      "error": null,
+      "sources_read": [
+        "corpus:cold-chain-traceability-brief",
+        "corpus:fmcsa-broker-transparency-summary",
+        "corpus:ridgeline-market-memo-q3-2026"
+      ],
+      "revisions": 0,
+      "support": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "answer": "Under the food traceability requirement as summarized in the library, produce on the designated list (fresh tomatoes, peppers, leafy greens, melons, fresh-cut fruit) is covered [1]. Shippers and receivers carry the lot-level record duty, including traceability lot code, quantity, and origin and destination [2]. A broker that only transports the food does not have to keep traceability lot codes, but must be able to provide shipping documents within 24 hours when a shipper or receiver requests them during a recall [3]. Temperature logs are not required by the rule, though receivers may make continuous reefer logs a contract condition, so check produce contracts for that [4].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "The food traceability requirement applies to foods on a designated traceability list, which includes fresh tomatoes, peppers, leafy greens, melons and fresh-cut fruit.",
+          "source_id": "corpus:cold-chain-traceability-brief",
+          "quote": "The food traceability requirement summarized here applies to foods on a designated traceability list, which includes fresh tomatoes, peppers, leafy greens, melons and fresh-cut fruit.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "Shippers and receivers must record a traceability lot code, quantity, and the origin and destination locations for each shipment.",
+          "source_id": "corpus:cold-chain-traceability-brief",
+          "quote": "Shippers and receivers must record key data elements for each shipment, including a traceability lot code, the quantity, and the location the food was shipped from and to.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "Carriers and brokers that only transport the food are not required to keep traceability lot codes, but must provide shipping documents within 24 hours when a shipper or receiver requests them during a recall.",
+          "source_id": "corpus:cold-chain-traceability-brief",
+          "quote": "Carriers and brokers that only transport the food are not required to keep traceability lot codes, but they must be able to provide shipping documents within 24 hours when a shipper or receiver requests them during a recall.",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "Temperature records are not required by the traceability rule, though many receivers ask for continuous reefer temperature logs as a contract condition.",
+          "source_id": "corpus:cold-chain-traceability-brief",
+          "quote": "Temperature records are not required by this rule, though many receivers now ask for continuous reefer temperature logs as a contract condition.",
+          "judge_supported": true
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "No primary FDA rule text is in the library; the compliance date, penalties, and any broker-specific deadlines for food traceability are not stated in the sources read.",
+        "The broker transparency summary (3-year record retention, 48-hour delivery, Feb 1, 2027 effective date, $10,000 fines) covers a different rule and was not used as food traceability evidence; whether it also applies to Ridgeline's produce loads is unverified.",
+        "The library does not say whether Ridgeline's shipper and carrier contracts already require the 24-hour recall document turnaround or reefer temperature logs.",
+        "Recommended contract or operating actions for produce accounts under food traceability were not found in the sources read."
+      ],
+      "expected_source_read": true,
+      "correctness": 1.0,
+      "correctness_reason": "The brief correctly states all key facts, including the covered foods, recordkeeping duties, 24-hour document requirement, and distinction between regulatory and contractual temperature logs.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r10-unanswerable-air",
+      "question": "What are current air cargo rates per kilogram from Memphis to Frankfurt?",
+      "answerable": false,
+      "raw_claims": 0,
+      "raw_verified": 0,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 0,
+      "final_reverified": 0,
+      "final_dropped": 0,
+      "cost_usd": 0.00565,
+      "latency_s": 17.74,
+      "error": null,
+      "sources_read": [],
+      "revisions": 0,
+      "support": [],
+      "answer": "We could not verify an answer to this question from the sources we read. See what we couldn't verify below.",
+      "claims": [],
+      "dropped": [],
+      "gaps": [
+        "No published air cargo rate per kg for Memphis (MEM) to Frankfurt (FRA) in the offline library.",
+        "No effective date, currency, or fuel and security surcharge information for any air lane.",
+        "No air freight tariff, airline rate sheet, or forwarder quote in the library."
+      ],
+      "expected_source_read": true,
+      "correctness": null,
+      "refused": true,
+      "judge_error": null
+    },
+    {
+      "id": "r03-carrier-exit",
+      "question": "What did the fall carrier survey say about reefer carriers shrinking or leaving the market, and why?",
+      "answerable": true,
+      "raw_claims": 8,
+      "raw_verified": 8,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 8,
+      "final_reverified": 8,
+      "final_dropped": 0,
+      "cost_usd": 0.013308,
+      "latency_s": 32.64,
+      "error": null,
+      "sources_read": [
+        "corpus:midsouth-carrier-pulse-survey-2026",
+        "corpus:ridgeline-carrier-scorecard-q3-2026",
+        "corpus:ridgeline-market-memo-q3-2026",
+        "corpus:southern-produce-bulletin-oct-2026"
+      ],
+      "revisions": 0,
+      "support": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "answer": "The fall 2026 Mid-South Carrier Pulse survey of 412 carriers (163 of them reefer operators) found that 22% of reefer carriers plan to reduce fleet size within six months and 9% are considering leaving the reefer market for dry van [1]. The reasons given by carriers planning to shrink were insurance premiums (64%), equipment financing costs (51%), and unpaid detention time (47%) [2]. For Ridgeline, this matches what we see internally: the Southeast lost about 6% of small reefer fleets since January, mostly owner-operators with one to five trucks, and 37 carriers were removed from the approved list in Q3, mostly for lapsed insurance [3][4]. Ridgeline's September reefer tender acceptance fell to 78% in the Southeast, so insurance-driven carrier loss and shrinkage are directly affecting our produce shippers' spot exposure [3][4].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "The survey sampled 412 carriers across five Southern states, including 163 reefer operators.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "The Fall 2026 Mid-South Carrier Pulse surveyed 412 carriers operating in Tennessee, Mississippi, Arkansas, Alabama and Georgia between August 25 and September 19, 2026. Of the respondents, 163 run refrigerated equipment.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "22% of reefer carriers plan to cut fleet size in the next six months, and 9% are considering leaving the reefer market for dry van.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "Among reefer carriers, 22% said they plan to reduce their fleet size in the next six months, and 9% said they are considering leaving the reefer market entirely and switching to dry van.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "Reefer carriers planning to shrink cite insurance premiums (64%), equipment financing (51%), and unpaid detention time (47%) as the main reasons.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "The most common reasons given for shrinking were insurance premiums (cited by 64% of reefer carriers planning to shrink), equipment financing costs (51%), and unpaid detention time (47%).",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "The Southeast lost an estimated 6% of active small reefer fleets since January, mostly owner-operators with one to five trucks.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Third, reefer capacity is thinning: the Southeast lost an estimated 6% of active small reefer fleets since January, mostly owner-operators with one to five trucks.",
+          "judge_supported": true
+        },
+        {
+          "n": 5,
+          "claim": "Ridgeline removed 37 carriers from its approved list in Q3, mostly for lapsed insurance.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "Carrier Relations removed 37 carriers from the approved list in Q3, mostly for lapsed insurance.",
+          "judge_supported": false
+        },
+        {
+          "n": 6,
+          "claim": "Ridgeline's contract tender acceptance on Southeast reefer fell to 78% in September, pushing more produce loads to the spot market at higher cost.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Ridgeline's contract tender acceptance on Southeast reefer fell to 78% in September, which means more of our produce shippers' loads are falling through to the spot market at higher cost.",
+          "judge_supported": true
+        },
+        {
+          "n": 7,
+          "claim": "Reefer carrier fall-off rose to 4.4% of reefer loads in Q3, up from 2.1% in Q2.",
+          "source_id": "corpus:ridgeline-carrier-scorecard-q3-2026",
+          "quote": "Carrier fall-off (a carrier cancelling after accepting a load) rose to 4.4% of reefer loads in Q3, compared with 2.1% in Q2.",
+          "judge_supported": true
+        },
+        {
+          "n": 8,
+          "claim": "One in five growers' members reported a contracted carrier rejecting at least one load in September.",
+          "source_id": "corpus:southern-produce-bulletin-oct-2026",
+          "quote": "Several growers reported paying spot reefer rates above $3.00 per mile to the Northeast in mid-September, and one in five members said a contracted carrier rejected at least one load in September.",
+          "judge_supported": false
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "The survey gives reasons only for carriers planning to shrink; it does not give reasons for the 9% considering a move to dry van.",
+        "The survey is a sample of carriers in five Southern states; it does not state how many carriers actually left the reefer market.",
+        "The sources do not say whether the 22% plan to shrink is higher or lower than in prior surveys, so no trend can be stated from them.",
+        "The Southeast 6% fleet-loss figure is an internal estimate, not a survey result, and its method is not described.",
+        "The Southern Produce bulletin gives no reasons for carrier shortages or exits."
+      ],
+      "expected_source_read": true,
+      "correctness": 0.5,
+      "correctness_reason": "The brief correctly reports the shrinkage and exit figures and all three reasons, but omits that only 11% planned to add trucks.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r06-ltl-gri",
+      "question": "What general rate increases are LTL carriers planning for 2027?",
+      "answerable": true,
+      "raw_claims": 3,
+      "raw_verified": 3,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 3,
+      "final_reverified": 3,
+      "final_dropped": 0,
+      "cost_usd": 0.007791,
+      "latency_s": 26.27,
+      "error": null,
+      "sources_read": [
+        "corpus:gulf-fuel-watch-2026-w41",
+        "corpus:ltl-rate-outlook-2027"
+      ],
+      "revisions": 0,
+      "support": [
+        true,
+        true,
+        true
+      ],
+      "answer": "Five of the largest LTL carriers have announced early-2027 general rate increases ranging from 4.9% to 6.5%, with a median of 5.9% [1]. Accessorial charges are rising faster than base rates, with liftgate fees up an average of 9% and two carriers adding a new residential delivery surcharge [2]. For Ridgeline, the practical read is that shippers tendering fewer than 50 LTL shipments a month will usually absorb the full GRI, while larger shippers typically negotiate one to three points off [3].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "Five of the largest LTL carriers have announced early-2027 general rate increases ranging from 4.9% to 6.5%, with a median of 5.9%.",
+          "source_id": "corpus:ltl-rate-outlook-2027",
+          "quote": "Five of the largest LTL carriers have announced general rate increases (GRIs) for early 2027 ranging from 4.9% to 6.5%, with a median of 5.9%.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "Liftgate fees are rising by an average of 9%, and two carriers are adding a new residential delivery surcharge; accessorial charges are rising faster than base rates.",
+          "source_id": "corpus:ltl-rate-outlook-2027",
+          "quote": "Accessorial charges are rising faster than base rates. Liftgate fees are going up by an average of 9%, and two carriers are adding a new residential delivery surcharge.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "Shippers that tender fewer than 50 LTL shipments a month usually see the full GRI, while larger shippers typically negotiate it down by one to three points.",
+          "source_id": "corpus:ltl-rate-outlook-2027",
+          "quote": "Shippers that tender fewer than 50 LTL shipments a month usually see the full GRI, while larger shippers typically negotiate it down by one to three points.",
+          "judge_supported": true
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "Individual carrier names and their specific GRI percentages are not identified in the source.",
+        "Effective dates for the 2027 GRIs are not stated in the source read.",
+        "Fuel surcharge changes for LTL carriers in 2027 were not found in the sources read.",
+        "Penalty or deadline terms tied to the GRIs were not found."
+      ],
+      "expected_source_read": true,
+      "correctness": 1.0,
+      "correctness_reason": "The brief accurately states all key facts, including the GRI range and median, accessorial increases, and differences by shipper volume.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r09-unanswerable-pnw",
+      "question": "What market share will Ridgeline have in the Pacific Northwest flatbed market in 2027?",
+      "answerable": false,
+      "raw_claims": 0,
+      "raw_verified": 0,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 0,
+      "final_reverified": 0,
+      "final_dropped": 0,
+      "cost_usd": 0.009709,
+      "latency_s": 28.98,
+      "error": null,
+      "sources_read": [
+        "corpus:ltl-rate-outlook-2027",
+        "corpus:midsouth-carrier-pulse-survey-2026",
+        "corpus:ridgeline-market-memo-q3-2026"
+      ],
+      "revisions": 0,
+      "support": [],
+      "answer": "We could not verify an answer to this question from the sources we read. See what we couldn't verify below.",
+      "claims": [],
+      "dropped": [],
+      "gaps": [
+        "PNW flatbed market size and 2027 forecast: no source in the library",
+        "Ridgeline's current PNW flatbed volume or market share: no source in the library",
+        "Any broker-level share forecast for PNW flatbed in 2027: no source in the library"
+      ],
+      "expected_source_read": true,
+      "correctness": null,
+      "refused": true,
+      "judge_error": null
+    },
+    {
+      "id": "r01-reefer-drivers",
+      "question": "What's driving reefer spot rates out of the Southeast this quarter, and what does it mean for our produce shippers?",
+      "answerable": true,
+      "raw_claims": 11,
+      "raw_verified": 7,
+      "raw_failed_by_reason": {
+        "number_not_in_quote": 4
+      },
+      "recovered_on_revision": 7,
+      "final_claims": 14,
+      "final_reverified": 14,
+      "final_dropped": 0,
+      "cost_usd": 0.021852,
+      "latency_s": 68.2,
+      "error": null,
+      "sources_read": [
+        "corpus:gulf-fuel-watch-2026-w41",
+        "corpus:mexico-produce-crossings-q3-2026",
+        "corpus:midsouth-carrier-pulse-survey-2026",
+        "corpus:ridgeline-detention-analysis-sep-2026",
+        "corpus:ridgeline-market-memo-q3-2026",
+        "corpus:southern-produce-bulletin-oct-2026"
+      ],
+      "revisions": 1,
+      "support": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "answer": "Southeast reefer spot rates averaged $2.87 per mile in Q3, up 14% from Q2, while dry van rose only 4% on the same lanes [1][2]. Drivers included a produce push three weeks longer than usual [3], Hurricane Corinne stranding about 1,100 reefer trailers [4], and a thinning small-fleet base down about 6% since January [5]. Capacity is tightening further: 41% of reefer carriers now refuse loads from at least one shipper over chronic detention [7], and 22% of reefer carriers plan to shrink their fleets [6]. Detention is also a Ridgeline cost: three produce shippers accounted for 58% of September's detention bill [8], and Ridgeline paid $41,800 in detention on produce loads in September [9]. Ridgeline's September Southeast reefer tender acceptance fell to 78% [10], so the pricing desk recommends re-opening Q4 produce contract rates with the top 20 produce shippers, adding a separate reefer fuel surcharge line, and booking holiday produce 72 hours ahead [11]. Diesel at $3.94 per gallon, up 31 cents since July, adds surcharge pressure [12], and the desk expects spot rates to ease to $2.60 to $2.70 per mile in Q4 but not return to Q2 levels [13].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "Southeast reefer spot rates averaged $2.87 per mile in Q3 2026, up 14% from Q2.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Reefer spot rates out of the Southeast averaged $2.87 per mile in Q3 2026, up 14% from $2.52 in Q2.",
+          "judge_supported": true
+        },
+        {
+          "n": 2,
+          "claim": "Dry van rose only 4% on the same lanes, widening the reefer gap to 61 cents a mile.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Dry van rates on the same lanes rose only 4% over the same period, so the gap between reefer and dry van widened to 61 cents a mile.",
+          "judge_supported": true
+        },
+        {
+          "n": 3,
+          "claim": "A late-summer Georgia and Florida produce push ran three weeks longer than usual.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "First, the late-summer Georgia and Florida produce push ran three weeks longer than usual because of a cool, wet spring that delayed planting.",
+          "judge_supported": true
+        },
+        {
+          "n": 4,
+          "claim": "The Southeast lost an estimated 6% of active small reefer fleets since January, mostly owner-operators with one to five trucks.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Third, reefer capacity is thinning: the Southeast lost an estimated 6% of active small reefer fleets since January, mostly owner-operators with one to five trucks.",
+          "judge_supported": true
+        },
+        {
+          "n": 5,
+          "claim": "The late-summer produce push and Hurricane Corinne stranded roughly 1,100 refrigerated trailers at the Port of Savannah closure in mid-September.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Second, Hurricane Corinne closed the Port of Savannah for four days in mid-September and stranded roughly 1,100 refrigerated trailers out of position.",
+          "judge_supported": false
+        },
+        {
+          "n": 6,
+          "claim": "22% of reefer carriers plan to reduce fleet size in the next six months, and 9% are considering leaving the reefer market for dry van.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "Among reefer carriers, 22% said they plan to reduce their fleet size in the next six months, and 9% said they are considering leaving the reefer market entirely and switching to dry van.",
+          "judge_supported": true
+        },
+        {
+          "n": 7,
+          "claim": "Forty-one percent of reefer carriers said they now refuse loads from at least one shipper because of chronic detention.",
+          "source_id": "corpus:midsouth-carrier-pulse-survey-2026",
+          "quote": "Forty-one percent of reefer carriers said they now refuse loads from at least one shipper because of chronic detention.",
+          "judge_supported": true
+        },
+        {
+          "n": 8,
+          "claim": "Three produce shippers accounted for 58% of September's detention bill.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Three produce shippers accounted for 58% of the September detention bill:",
+          "judge_supported": true
+        },
+        {
+          "n": 9,
+          "claim": "Ridgeline paid $41,800 in detention to carriers on produce loads in September, up from $23,500 in June.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "In September 2026 Ridgeline paid $41,800 in detention to carriers on produce loads, up from $23,500 in June.",
+          "judge_supported": true
+        },
+        {
+          "n": 10,
+          "claim": "Ridgeline's Southeast reefer contract tender acceptance fell to 78% in September, pushing more produce loads to the spot market at higher cost.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "Ridgeline's contract tender acceptance on Southeast reefer fell to 78% in September, which means more of our produce shippers' loads are falling through to the spot market at higher cost.",
+          "judge_supported": true
+        },
+        {
+          "n": 11,
+          "claim": "The pricing desk recommends re-opening Q4 contract rates with the top 20 produce shippers, adding a separate reefer fuel surcharge line, and booking holiday produce at least 72 hours ahead.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "The pricing desk recommends three actions for produce accounts: re-open Q4 contract rates with our top 20 produce shippers rather than waiting for the January bid, add a reefer fuel surcharge line separate from the linehaul rate, and book holiday-season produce at least 72 hours ahead instead of the usual 48.",
+          "judge_supported": true
+        },
+        {
+          "n": 12,
+          "claim": "Southeast diesel averaged $3.94 per gallon in the week of October 6, 2026, up 31 cents from July.",
+          "source_id": "corpus:gulf-fuel-watch-2026-w41",
+          "quote": "The average retail on-highway diesel price in the Southeast was $3.94 per gallon in the week of October 6, 2026, up 31 cents from $3.63 at the start of July.",
+          "judge_supported": true
+        },
+        {
+          "n": 13,
+          "claim": "The pricing desk expects Southeast reefer spot rates to ease to $2.60 to $2.70 per mile in Q4 but not return to Q2 levels.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "We expect Southeast reefer spot rates to ease to between $2.60 and $2.70 per mile in Q4 once the produce season ends, but not to return to Q2 levels.",
+          "judge_supported": false
+        },
+        {
+          "n": 14,
+          "claim": "Growers asked brokers for earlier capacity commitments and clearer explanations of fuel surcharges, and one in five members said a contracted carrier rejected at least one load in September.",
+          "source_id": "corpus:southern-produce-bulletin-oct-2026",
+          "quote": "Growers asked brokers for earlier capacity commitments and clearer explanations of fuel surcharges.",
+          "judge_supported": false
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "Ridgeline's per-shipper reefer contract terms and rate schedules were not in the sources read.",
+        "Sources are fictional demo documents; figures should be verified against live market data before pricing decisions.",
+        "Carriers' top ranked priority for accepting broker loads (detention paid within 30 days) is available but no Ridgeline action plan for it was found.",
+        "Only 62% of September produce detention was billed back to shippers because BOL in/out times were missing; no source quantified the fix's full impact."
+      ],
+      "expected_source_read": true,
+      "correctness": 0.5,
+      "correctness_reason": "The brief captures the main rate increase, capacity pressures, tender acceptance and recommendations, but omits that spring contract rates are well below market, the cool, wet spring and Savannah\u2019s four-day closure.",
+      "refused": null,
+      "judge_error": null
+    },
+    {
+      "id": "r05-detention",
+      "question": "Which of our produce shippers are driving detention costs, and how much are we paying?",
+      "answerable": true,
+      "raw_claims": 8,
+      "raw_verified": 8,
+      "raw_failed_by_reason": {},
+      "recovered_on_revision": 0,
+      "final_claims": 8,
+      "final_reverified": 8,
+      "final_dropped": 0,
+      "cost_usd": 0.010569,
+      "latency_s": 31.3,
+      "error": null,
+      "sources_read": [
+        "corpus:ridgeline-carrier-scorecard-q3-2026",
+        "corpus:ridgeline-detention-analysis-sep-2026",
+        "corpus:ridgeline-market-memo-q3-2026"
+      ],
+      "revisions": 0,
+      "support": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "answer": "Three produce shippers drove the bulk of September 2026 detention: Okefenokee Fresh Farms, Sunbelt Pepper Co., and Gator Grove Citrus together accounted for 58% of the September detention bill [1][2][3][4]. Okefenokee was the largest at $11,200 with 4.6 hours average dwell per pickup, Sunbelt Pepper $7,900 at 3.9 hours, and Gator Grove $5,150 at 3.4 hours [1][2][3]. Total produce detention paid to carriers was $41,800 in September, up from $23,500 in June, under a policy of 2 free hours then $75 per hour capped at $600 per stop [5][6]. Only 62% of September produce detention was billed back to shippers because the rest lacked signed in and out times on the BOL, so Ridgeline is absorbing a large share of this cost [7]. The pricing desk recommends re-opening Q4 contract rates with the top 20 produce shippers, which is the lever to pursue with these accounts [8].",
+      "claims": [
+        {
+          "n": 1,
+          "claim": "Okefenokee Fresh Farms had average dwell of 4.6 hours per pickup and $11,200 in detention in September 2026.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Okefenokee Fresh Farms (Valdosta, GA): average dwell of 4.6 hours per pickup, $11,200 in detention.",
+          "judge_supported": false
+        },
+        {
+          "n": 2,
+          "claim": "Sunbelt Pepper Co. had average dwell of 3.9 hours per pickup and $7,900 in detention in September 2026.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Sunbelt Pepper Co. (Tifton, GA): average dwell of 3.9 hours per pickup, $7,900 in detention.",
+          "judge_supported": false
+        },
+        {
+          "n": 3,
+          "claim": "Gator Grove Citrus had average dwell of 3.4 hours per pickup and $5,150 in detention in September 2026.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Gator Grove Citrus (Lakeland, FL): average dwell of 3.4 hours per pickup, $5,150 in detention.",
+          "judge_supported": false
+        },
+        {
+          "n": 4,
+          "claim": "Three produce shippers accounted for 58% of the September 2026 detention bill.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Three produce shippers accounted for 58% of the September detention bill:",
+          "judge_supported": false
+        },
+        {
+          "n": 5,
+          "claim": "Ridgeline paid $41,800 in detention to carriers on produce loads in September 2026, up from $23,500 in June.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "In September 2026 Ridgeline paid $41,800 in detention to carriers on produce loads, up from $23,500 in June.",
+          "judge_supported": true
+        },
+        {
+          "n": 6,
+          "claim": "Ridgeline's detention policy gives carriers 2 free hours, then $75 per hour, capped at $600 per stop.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Under our policy carriers get 2 free hours, then $75 per hour capped at $600 per stop.",
+          "judge_supported": false
+        },
+        {
+          "n": 7,
+          "claim": "Only 62% of September produce detention was billed back to the shipper because the rest lacked signed in and out times on the BOL.",
+          "source_id": "corpus:ridgeline-detention-analysis-sep-2026",
+          "quote": "Only 62% of September produce detention was billed back to the shipper, because the rest lacked signed in and out times on the BOL.",
+          "judge_supported": true
+        },
+        {
+          "n": 8,
+          "claim": "The pricing desk recommends re-opening Q4 contract rates with the top 20 produce shippers rather than waiting for the January bid.",
+          "source_id": "corpus:ridgeline-market-memo-q3-2026",
+          "quote": "The pricing desk recommends three actions for produce accounts: re-open Q4 contract rates with our top 20 produce shippers rather than waiting for the January bid, add a reefer fuel surcharge line separate from the linehaul rate, and book holiday-season produce at least 72 hours ahead instead of the usual 48.",
+          "judge_supported": true
+        }
+      ],
+      "dropped": [],
+      "gaps": [
+        "Only three produce shippers are named with detention amounts; the full list of produce shippers with detention charges is not in the sources.",
+        "No per-shipper contract terms for free time, caps, or billback are in the sources.",
+        "The sources give no dollar amount for the 58% share beyond the total, and no detention figures for Q4 2026 or later."
+      ],
+      "expected_source_read": true,
+      "correctness": 0.5,
+      "correctness_reason": "The costs, shippers, dwell times, and billing shortfall are correct, but the brief omits the recommended appointment confirmations and enforcement of signed BOL times.",
+      "refused": null,
+      "judge_error": null
+    }
+  ]
+}

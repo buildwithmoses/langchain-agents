@@ -1,0 +1,145 @@
+{
+  "question": "Summarize FMCSA's broker and freight forwarder financial responsibility rule (the $75,000 bond rules that took effect in January 2026) and what Ridgeline must do to stay compliant.",
+  "mode": "web",
+  "model": "openrouter:anthropic/claude-haiku-5.5",
+  "latency_s": 81.46,
+  "cost_usd": 0.046292,
+  "llm_cost_usd": 0.02363,
+  "search_cost_usd": 0.022662,
+  "model_calls": 21,
+  "input_tokens": 148850,
+  "output_tokens": 17490,
+  "stats": {
+    "raw_claims": 9,
+    "raw_verified": 8,
+    "raw_failed_by_reason": {
+      "number_not_in_quote": 1
+    },
+    "revisions": 1,
+    "final_claims": 9,
+    "final_dropped": 0,
+    "final_failed_by_reason": {},
+    "sources_read": 2,
+    "sources_failed": 4,
+    "searches": 3,
+    "error": null
+  },
+  "sources": {
+    "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-overview-and-compliance": {
+      "source_id": "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-overview-and-compliance",
+      "kind": "web",
+      "title": "",
+      "final_url": "",
+      "fetched_at": "2026-10-28T21:41:56+00:00",
+      "chars": 0,
+      "truncated": false,
+      "error": "disallowed by robots.txt",
+      "status": 0,
+      "elapsed_s": 0.012
+    },
+    "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-faqs": {
+      "source_id": "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-faqs",
+      "kind": "web",
+      "title": "",
+      "final_url": "",
+      "fetched_at": "2026-10-28T21:41:54+00:00",
+      "chars": 0,
+      "truncated": false,
+      "error": "disallowed by robots.txt",
+      "status": 0,
+      "elapsed_s": 0.277
+    },
+    "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html": {
+      "source_id": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+      "kind": "web",
+      "title": "",
+      "final_url": "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+      "fetched_at": "2026-10-28T21:41:55+00:00",
+      "chars": 35921,
+      "truncated": false,
+      "error": null,
+      "status": 200,
+      "elapsed_s": 1.124
+    },
+    "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-C/section-387.307": {
+      "source_id": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-C/section-387.307",
+      "kind": "web",
+      "title": "Federal Register :: Request Access",
+      "final_url": "https://unblock.federalregister.gov",
+      "fetched_at": "2026-10-28T21:41:55+00:00",
+      "chars": 0,
+      "truncated": false,
+      "error": "blocked by a bot check / access wall (HTTP 200 challenge page)",
+      "status": 200,
+      "elapsed_s": 1.265
+    },
+    "https://www.fmcsa.dot.gov/regulations/docket-no-fmcsa-2024-0280-rin-2126-ac76-broker-and-freight-forwarder-financial-0": {
+      "source_id": "https://www.fmcsa.dot.gov/regulations/docket-no-fmcsa-2024-0280-rin-2126-ac76-broker-and-freight-forwarder-financial-0",
+      "kind": "web",
+      "title": "",
+      "final_url": "",
+      "fetched_at": "2026-10-28T21:41:54+00:00",
+      "chars": 0,
+      "truncated": false,
+      "error": "disallowed by robots.txt",
+      "status": 0,
+      "elapsed_s": 0.024
+    },
+    "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility": {
+      "source_id": "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+      "kind": "web",
+      "title": "",
+      "final_url": "https://www.federalregister.gov/documents/full_text/text/2023/11/16/2023-25312.txt",
+      "fetched_at": "2026-10-28T21:42:07+00:00",
+      "chars": 137157,
+      "truncated": false,
+      "error": null,
+      "status": 200,
+      "elapsed_s": 0.375
+    }
+  },
+  "searches": {
+    "s1-fa95da": {
+      "query": "FMCSA broker freight forwarder financial responsibility $75,000 surety bond trust fund final rule MAP-21 section 32916",
+      "mode": "web",
+      "n_results": 5,
+      "cost_usd": 0.00754541,
+      "result_ids": [
+        "https://www.fmcsa.dot.gov/regulations/docket-no-fmcsa-2016-0102-broker-and-freight-forwarder-financial-responsibility",
+        "https://uscode.house.gov/us/usc/119-121/t49/s13906/",
+        "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-overview-and-compliance",
+        "https://www.law.cornell.edu/cfr/text/49/387.307",
+        "https://www.fmcsa.dot.gov/amendments-implement-certain-provisions-moving-ahead-progress-21st-century-act"
+      ],
+      "elapsed_s": 5.147
+    },
+    "s1-62d504": {
+      "query": "FMCSA BMC-84 BMC-85 broker bond filing requirements January 2026 compliance",
+      "mode": "web",
+      "n_results": 5,
+      "cost_usd": 0.007556424999999999,
+      "result_ids": [
+        "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-overview-and-compliance",
+        "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-C/section-387.307",
+        "https://www.fmcsa.dot.gov/registration/insurance-filing-requirements",
+        "https://www.fmcsa.dot.gov/registration/notifications-and-responses-fmcsa-surety-and-trust-providers-brokers-and-freight",
+        "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-2023-rule-frequently-asked"
+      ],
+      "elapsed_s": 3.931
+    },
+    "s1-8b0b83": {
+      "query": "49 CFR 387.307 broker financial responsibility penalties enforcement",
+      "mode": "web",
+      "n_results": 5,
+      "cost_usd": 0.00755997,
+      "result_ids": [
+        "https://www.fmcsa.dot.gov/registration/broker-and-freight-forwarder-financial-responsibility-rule-faqs",
+        "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-C/section-387.307",
+        "https://www.federalregister.gov/documents/2023/11/16/2023-25312/broker-and-freight-forwarder-financial-responsibility",
+        "https://www.federalregister.gov/documents/full_text/html/2024/12/31/2024-30509.html",
+        "https://www.fmcsa.dot.gov/regulations/docket-no-fmcsa-2024-0280-rin-2126-ac76-broker-and-freight-forwarder-financial-0"
+      ],
+      "elapsed_s": 4.437
+    }
+  }
+}

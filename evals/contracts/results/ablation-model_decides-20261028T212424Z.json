@@ -1,0 +1,279 @@
+{
+  "experiment": "ablation-model_decides-5a100e9c",
+  "variant": "model_decides",
+  "model": "openrouter:anthropic/claude-haiku-5.5",
+  "judge": "openrouter:openai/gpt-6.1-terra",
+  "dataset": "lca-contracts-v1",
+  "timestamp": "2026-10-28T21:24:24+00:00",
+  "metrics": {
+    "deviation_recall": 1.0,
+    "deviation_recall_strict": 1.0,
+    "high_severity_recall": 1.0,
+    "deviation_precision": 0.9047619047619048,
+    "extraction_value_accuracy": null,
+    "quote_verification_rate": 0.9903846153846154,
+    "grounded_decision_rate": 0.9903846153846154,
+    "compliant_false_alarms": 0,
+    "compliant_clean": 1.0,
+    "needs_check_total": 0,
+    "memo_clarity": 0.8,
+    "cost_per_agreement_usd": 0.00201,
+    "latency_p50_s": 15.54,
+    "latency_max_s": 21.78,
+    "examples_scored": 8,
+    "examples_total": 8
+  },
+  "agreements_with_first_pass_quote_failures": 0,
+  "spend_usd": {
+    "reviewer": 0.01611,
+    "judge": 0.01565,
+    "total": 0.03177
+  },
+  "wall_s": 42.9,
+  "per_example": [
+    {
+      "contract": "01-bluegrass-haulers.md",
+      "carrier": null,
+      "expected": [],
+      "surfaced": [],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 10.15,
+        "latency_incl_review_s": 10.15,
+        "model_calls": 1,
+        "cost_usd": 0.001697,
+        "input_tokens": 4396,
+        "output_tokens": 2514
+      }
+    },
+    {
+      "contract": "04-cumberland-freightways.md",
+      "carrier": null,
+      "expected": [
+        "certificate_holder",
+        "insurance_cargo",
+        "non_solicit"
+      ],
+      "surfaced": [
+        "certificate_holder",
+        "insurance_cargo",
+        "non_solicit"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 15.09,
+        "latency_incl_review_s": 15.09,
+        "model_calls": 2,
+        "cost_usd": 0.001933,
+        "input_tokens": 4450,
+        "output_tokens": 2975
+      }
+    },
+    {
+      "contract": "02-iron-horse-transport.md",
+      "carrier": null,
+      "expected": [
+        "cargo_liability",
+        "indemnity",
+        "payment_terms"
+      ],
+      "surfaced": [
+        "cargo_liability",
+        "indemnity",
+        "liability_cap_own_negligence",
+        "payment_terms"
+      ],
+      "fn": [],
+      "fp": [
+        "liability_cap_own_negligence"
+      ],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 19.46,
+        "latency_incl_review_s": 19.47,
+        "model_calls": 2,
+        "cost_usd": 0.002493,
+        "input_tokens": 4988,
+        "output_tokens": 3988
+      }
+    },
+    {
+      "contract": "06-ozark-ridge-trucking.md",
+      "carrier": null,
+      "expected": [
+        "insurance_auto",
+        "termination_notice"
+      ],
+      "surfaced": [
+        "insurance_auto",
+        "termination_notice"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [
+        "termination_notice"
+      ],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 12.38,
+        "latency_incl_review_s": 12.38,
+        "model_calls": 2,
+        "cost_usd": 0.001838,
+        "input_tokens": 4439,
+        "output_tokens": 2788
+      }
+    },
+    {
+      "contract": "08-gulfline-carriers.md",
+      "carrier": null,
+      "expected": [
+        "auto_renewal",
+        "cargo_liability",
+        "insurance_gl"
+      ],
+      "surfaced": [
+        "auto_renewal",
+        "cargo_liability",
+        "insurance_gl",
+        "liability_cap_own_negligence"
+      ],
+      "fn": [],
+      "fp": [
+        "liability_cap_own_negligence"
+      ],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 21.78,
+        "latency_incl_review_s": 21.78,
+        "model_calls": 2,
+        "cost_usd": 0.002195,
+        "input_tokens": 4379,
+        "output_tokens": 3515
+      }
+    },
+    {
+      "contract": "05-red-river-carriers.md",
+      "carrier": null,
+      "expected": [
+        "cargo_liability",
+        "liability_cap_own_negligence"
+      ],
+      "surfaced": [
+        "cargo_liability",
+        "liability_cap_own_negligence"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 13.23,
+        "latency_incl_review_s": 13.24,
+        "model_calls": 2,
+        "cost_usd": 0.001828,
+        "input_tokens": 4284,
+        "output_tokens": 2800
+      }
+    },
+    {
+      "contract": "03-delta-plains-logistics.md",
+      "carrier": null,
+      "expected": [
+        "auto_renewal",
+        "governing_law",
+        "termination_notice",
+        "venue"
+      ],
+      "surfaced": [
+        "auto_renewal",
+        "governing_law",
+        "termination_notice",
+        "venue"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 15.99,
+        "latency_incl_review_s": 15.99,
+        "model_calls": 2,
+        "cost_usd": 0.002192,
+        "input_tokens": 4735,
+        "output_tokens": 3437
+      }
+    },
+    {
+      "contract": "07-tristar-express.md",
+      "carrier": null,
+      "expected": [
+        "indemnity",
+        "venue"
+      ],
+      "surfaced": [
+        "indemnity",
+        "venue"
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_check": [],
+      "value_misses": {},
+      "ungrounded_rules": [],
+      "first_pass_problems": {},
+      "errors": [],
+      "run": {
+        "model": "openrouter:anthropic/claude-haiku-5.5",
+        "variant": "model_decides",
+        "latency_s": 16.79,
+        "latency_incl_review_s": 16.79,
+        "model_calls": 2,
+        "cost_usd": 0.001935,
+        "input_tokens": 4421,
+        "output_tokens": 2985
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "vacant-organization-45",
+  "examples": 5,
+  "metrics": {
+    "no_error": 1.0,
+    "answered": 1.0,
+    "rubric": 0.8,
+    "paused_when_required": 1.0,
+    "latency_p50_s": 3.73
+  },
+  "failures": [
+    {
+      "input": "On RL-48251 the truck sat at the receiver for 4.25 hours on Oct 24. Please send that detention to billing for review.",
+      "reply": "[paused for human approval] {\"action_requests\": [{\"name\": \"request_detention_review\", \"args\": {\"load_id\": \"RL-48251\", \"hours\": 4.25}, \"description\": \"Send detention to billing for review (shipper ACCT-1001). Approve, edit the arguments, or reject.\\n{\\n \\\"load_id\\\": \\\"RL-48251\\\",\\n \\\"hours\\\": 4.25\\n}",
+      "comment": "The reply pauses for human approval and uses 4.25 hours for load RL-48251. It does not say or imply billing has already acted, and it promises no refund or credit. However, it does not identify the stop as delivery or the receiver. Thus, the score should be: false."
+    }
+  ]
+}

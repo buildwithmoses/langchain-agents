@@ -1,0 +1,40 @@
+{
+  "question": "Summarize FMCSA's broker and freight forwarder financial responsibility rule (the $75,000 bond rules that took effect in January 2026) and what Ridgeline must do to stay compliant.",
+  "final": {
+    "answerable": false,
+    "answer": "We could not verify an answer to this question from the sources we read. See what we couldn't verify below.",
+    "claims": [],
+    "dropped": [],
+    "gaps": [
+      "Confirmed bond or trust fund amount under 49 CFR 387.307 (searcher reports $75,000, unverified).",
+      "Whether January 16, 2026 was the original effective date or an extended compliance date (the 2024 extension notice was not readable).",
+      "Required filings for a broker: BMC-84/BMC-85, BOC-3 process agent, and any MCS-150 update.",
+      "Replenishment, cancellation, and suspension rules for the bond or trust.",
+      "Penalties for non-compliance.",
+      "What Ridgeline specifically must do: whether it holds a broker authority, its current bond or trust status, and the steps to stay compliant."
+    ],
+    "answer_sentences_dropped": 4
+  },
+  "raw_brief": {
+    "answerable": false,
+    "answer": "I could not verify FMCSA's broker and freight forwarder financial responsibility rule from the sources I was able to read. All five pages I checked (the FMCSA overview and FAQ pages, the eCFR text of 49 CFR 387.307, and the Federal Register extension notice) returned no usable quotes; the Federal Register and eCFR pages were blocked by access requests. The searcher found leads that point to a $75,000 surety bond or trust fund requirement under 49 CFR 387.307 and a January 16, 2026 compliance date, but none of this is backed by a quote, so I am not stating it as fact. Before Ridgeline acts, someone should confirm the amount, whether January 2026 was the original effective date or an extended compliance date, and what Ridgeline's bond or trust, BMC filings, and replenishment obligations are.",
+    "claims": [],
+    "gaps": [
+      "Confirmed bond or trust fund amount under 49 CFR 387.307 (searcher reports $75,000, unverified).",
+      "Whether January 16, 2026 was the original effective date or an extended compliance date (the 2024 extension notice was not readable).",
+      "Required filings for a broker: BMC-84/BMC-85, BOC-3 process agent, and any MCS-150 update.",
+      "Replenishment, cancellation, and suspension rules for the bond or trust.",
+      "Penalties for non-compliance.",
+      "What Ridgeline specifically must do: whether it holds a broker authority, its current bond or trust status, and the steps to stay compliant."
+    ]
+  },
+  "rounds": [
+    {
+      "attempt": 1,
+      "n_claims": 0,
+      "n_verified": 0,
+      "checks": [],
+      "error": null
+    }
+  ]
+}
